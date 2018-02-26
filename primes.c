@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 int main() {
-	int n=10;
+	int n;
+	printf("input n: ");
+	scanf("%d",&n);
 	int a[n];
-//	a=(int *)malloc(n*sizeof(int));
 	printf("array of prime numbers:\n");
 	for (int i=1;i<=n;i++)
 		a[i]=i;
@@ -15,7 +16,7 @@ int main() {
 				a[j]=0;
 		}
 	}
-//	free(a);
+	printf("\n");
 	getchar();
 	return 0;
 }
